@@ -1,4 +1,4 @@
-# Primary School Management System — v0.6.4 Development Build
+# Primary School Management System — v0.6.7 Online Deployment Preparation Build
 
 ## Academic report card enhancements
 - Editable class teacher comments and headteacher remarks saved per learner, academic year, and term.
@@ -42,3 +42,10 @@ The app listens on the `PORT` environment variable and can use a persistent SQLi
 Required environment variables: `JWT_SECRET` (unique random value, at least 24 characters), `SCHOOL_NAME=CORNHILL NURSERY AND PRIMARY SCHOOL`, `DB_PATH` (persistent disk path), `ADMIN_USERNAME`, and `ADMIN_PASSWORD` (at least 12 characters). Keep secrets private. Run `npm run setup-admin` exactly once after environment variables are set and before staff sign in. If an admin account already exists, the setup command will stop rather than overwrite it.
 
 Before real use, configure persistent backups, test restore, confirm TLS/HTTPS, review role permissions, and run end-to-end tests. The app is not certified production-ready. Hosting charges and persistent disk availability depend on the provider and plan.
+
+
+## Version 0.6.7 — Online deployment preparation
+
+- Adds optional `DB_PATH` configuration so SQLite can live on a hosting provider persistent disk.
+- Adds initial admin environment-variable instructions for hosted setup.
+- Hosting, security review, and end-to-end testing still need to be completed before real school use.
