@@ -9,7 +9,8 @@
     "dev": "node --watch server.js",
     "desktop": "electron desktop/main.js",
     "desktop:dev": "cross-env SCHOOL_APP_URL=http://localhost:3000 electron desktop/main.js",
-    "setup-admin": "node setup-admin.js"
+    "setup-admin": "node setup-admin.js",
+    "check": "node --check server.js && node --check db.js && node --check setup-admin.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
