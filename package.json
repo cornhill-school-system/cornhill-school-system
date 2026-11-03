@@ -1,8 +1,8 @@
 {
   "name": "primary-school-management",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "private": true,
-  "description": "Primary School Management System with Supabase PostgreSQL",
+  "description": "CORNHILL Nursery and Primary School Management System with Supabase PostgreSQL",
   "main": "desktop/main.js",
   "scripts": {
     "start": "node server.js",
