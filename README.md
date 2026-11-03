@@ -17,9 +17,9 @@ This branch is being prepared for online use with Supabase PostgreSQL. The `main
 
 Optional: set `PGPOOL_MAX` to tune the PostgreSQL connection pool. TLS certificate verification is disabled for the PostgreSQL connection by default to support common managed Supabase connection endpoints; use a trusted connection endpoint and keep HTTPS enabled for the web app.
 
-## Important data warning
+## Fresh database setup
 
-The PostgreSQL schema is separate from the old SQLite database. Running `supabase/schema.sql` does not copy students, staff, payments, marks, users, or other records from SQLite. Do not delete the old database or start entering official live records until the school has decided whether existing records must be migrated and a verified backup has been made.
+The school has confirmed that there are no existing school records to preserve for this installation. Use the Supabase PostgreSQL database as a fresh database: run `supabase/schema.sql`, then create the first administrator with `npm run setup-admin`. No SQLite data import is required for this fresh start. Keep any old project files as a precaution until the new hosted system has been tested and accepted.
 
 ## Current application coverage
 
