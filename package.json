@@ -2,7 +2,7 @@
   "name": "primary-school-management",
   "version": "0.6.7",
   "private": true,
-  "description": "Primary school management system with school branding and report comment library",
+  "description": "Primary School Management System with Supabase PostgreSQL",
   "main": "desktop/main.js",
   "scripts": {
     "start": "node server.js",
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.8.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "helmet": "^8.0.0",
